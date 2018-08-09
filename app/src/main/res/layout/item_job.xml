@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="@drawable/ripple_primary"
+    card_view:cardElevation="@dimen/elevation_card"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="@dimen/margin_medium_2"
+        android:paddingTop="@dimen/margin_medium_3"
+        android:paddingRight="@dimen/margin_medium_2"
+        android:paddingBottom="@dimen/margin_medium_3">
+
+        <ImageView
+            android:id="@+id/iv_job_logo"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_job"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            />
+
+        <TextView
+            android:id="@+id/tv_job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Developer"
+            android:layout_toRightOf="@id/iv_job_logo"
+            android:padding="@dimen/margin_small"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular"
+            />
+
+        <TextView
+            android:id="@+id/tv_posted_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 days"
+            android:layout_toRightOf="@id/iv_job_logo"
+            android:layout_below="@id/tv_job_title"
+            android:padding="@dimen/margin_small"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_small"
+            />
+
+        <ImageView
+            android:id="@+id/iv_apply"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_apply_now"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_below="@id/tv_job_title"
+            android:layout_toRightOf="@id/tv_posted_date"
+            />
+
+        <com.sackcentury.shinebuttonlib.ShineButton
+            android:id="@+id/btn_like"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:src="@android:color/darker_gray"
+            app:btn_color="@android:color/darker_gray"
+            app:btn_fill_color="#3B5998"
+            app:allow_random_color="false"
+            app:enable_flashing="false"
+            app:big_shine_color="#3B5998"
+            app:click_animation_duration="200"
+            app:shine_animation_duration="1500"
+            app:shine_turn_angle="10"
+            app:small_shine_offset_angle="20"
+            app:shine_distance_multiple="1.5"
+            app:small_shine_color="#CC9999"
+            app:shine_count="8"
+            app:siShape="@raw/like"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

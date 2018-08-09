@@ -1,4 +1,4 @@
-package xyz.tunlinaung.padc_5_p_tla_ex5_mmkuunyii
+package xyz.tunlinaung.mmkuunyii
 
 import org.junit.Test
 

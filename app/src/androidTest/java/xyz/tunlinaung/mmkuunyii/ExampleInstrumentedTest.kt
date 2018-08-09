@@ -1,4 +1,4 @@
-package xyz.tunlinaung.padc_5_p_tla_ex5_mmkuunyii
+package xyz.tunlinaung.mmkuunyii
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
