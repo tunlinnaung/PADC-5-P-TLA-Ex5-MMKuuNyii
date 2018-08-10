@@ -39,6 +39,7 @@ dependencies {
     implementation 'org.greenrobot:eventbus:3.1.1'
 
     implementation 'com.google.android.gms:play-services-auth:15.0.1'
+    compile 'com.google.android.gms:play-services-appinvite:16.0.1'
 
     implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.google.firebase:firebase-database:16.0.1'

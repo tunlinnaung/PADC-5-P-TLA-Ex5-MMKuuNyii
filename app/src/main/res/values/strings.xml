@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">PADC-5-P-TLA-Ex5-MMKuuNyii</string>
+    <string name="app_name">MM-KuuNyii</string>
 
     <string name="msg_default_empty">သက်ဆိုင်ရာ data များ ပြရန် မရှိသေးပါ</string>
+
+    <string name="invitation_title">Join MM-KuuNyii</string>
+    <string name="invitation_message">Be informed on the jobs that matter to Myanmar people</string>
+    <string name="invitation_cta">I want to join</string>
 </resources>

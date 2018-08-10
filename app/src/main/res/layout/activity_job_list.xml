@@ -15,10 +15,45 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/primary"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
-            />
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+            <xyz.tunlinaung.mmkuunyii.components.mmfont.components.MMTextView
+                android:id="@+id/tvScreenTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white_full"
+                android:textSize="@dimen/text_regular_3x" />
+
+            <ImageView
+                android:id='@+id/ivLogout'
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_logout"
+                android:tint="@color/white_ish"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/margin_card_medium_2_n"
+                android:padding="@dimen/margin_small"
+                android:foreground="@drawable/ripple_white"
+                android:clickable="true"
+                />
+
+            <ImageView
+                android:id='@+id/ivInviteToApp'
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_invite_to_app"
+                android:tint="@color/white_ish"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/margin_card_medium_2_n"
+                android:padding="@dimen/margin_small"
+                android:foreground="@drawable/ripple_white"
+                android:clickable="true"
+                />
+
+        </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
 
@@ -44,9 +79,10 @@
                 />
 
             <TextView
+                android:id="@+id/tvJobCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="220 Jobs"
+                android:text="0 Job"
                 android:layout_gravity="right"
                 android:textColor="@color/secondary_text"
                 android:textSize="@dimen/text_regular_2x"
@@ -56,17 +92,16 @@
         </FrameLayout>
 
         <xyz.tunlinaung.mmkuunyii.components.rvset.SmartRecyclerView
-            android:id="@+id/rv_job_list"
+            android:id="@+id/rvJobList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/margin_medium_3"
             android:clipToPadding="false"
             android:padding="@dimen/margin_card_medium"
             android:scrollbarStyle="outsideOverlay"
             />
 
         <include
-            android:id="@+id/vp_empty_news_feed"
+            android:id="@+id/vpEmptyJob"
             layout="@layout/view_pod_empty"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
